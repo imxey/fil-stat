@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mats Price calculator</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>MATS PRICE CALCULATOR</h1><hr><br>
+            <form action="/" method="post">
+                <label for="input1">Metal : </label>
+                <input type="number" id="input1" name="input1"><br><br>
+        
+                <label for="input2">Cloth : </label>
+                <input type="number" id="input2" name="input2"><br><br>
+        
+                <label for="input3">Beast : </label>
+                <input type="number" id="input3" name="input3"><br><br>
+        
+                <label for="input4">Wood : </label>
+                <input type="number" id="input4" name="input4"><br><br>
+
+                <label for="input5">Medicine : </label>
+                <input type="number" id="input5" name="input5"><br><br>
+
+                <label for="input6">Mana : </label>
+                <input type="number" id="input6" name="input6"><br><br>
+        
+                <input type="submit" value="Submit">
+            </form>
+            {% if total is defined %}
+            <p>Total harga fil stat minimal adalah: {{ total }} spina</p>
+            {% endif %}
+            <p>*metal : beautiful mineral (laduro),burgar's cloth (laduro), beast : tailgon, medicine : jelly, mana: ss1</p>
+        </div>
+    </body>
+</html>
