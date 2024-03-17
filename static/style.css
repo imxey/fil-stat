@@ -12,5 +12,27 @@ body {text-align: center;
     border: 5px solid;
     padding: 10px;
     position: absolute;
-    margin-left: 23%;
+    margin-left: 20%;
+}
+@media screen and (max-width: 480px){
+    html{
+    margin: 2%;
+}
+body {text-align: center;
+
+}
+#input1, #input2, #input3, #input4, #input6{
+    left: 10px;
+    position: relative;
+}
+.container{
+    border: 5px solid;
+    padding: 10px;
+    position: absolute;
+    margin-left: 2%;
+    margin-right: 4%;
+    margin-top:10%;
+}
+
+
 }
